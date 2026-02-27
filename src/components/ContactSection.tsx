@@ -9,15 +9,50 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast({ title: "Quote Request Sent!", description: "We'll get back to you within 1 hour." });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     toast({ title: "Quote Request Sent!", description: "We'll get back to you within 1 hour." });
+  //     (e.target as HTMLFormElement).reset();
+  //   }, 1000);
+  // };
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
+
+  const form = e.target as HTMLFormElement;
+  const formData = new FormData(form);
+
+  const data = {
+    name: formData.get("name"),
+      phone: formData.get("phone"),
+    email: formData.get("email"),
+    message: formData.get("message"),
   };
+
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbx_Q12WmxTet_JWLL7eDE1kV_SJJTuYdGvsuLrrFp30qNkOyfZVHE3a2ksa3xat0kYAow/exec", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+
+    toast({
+      title: "Quote Request Sent!",
+      description: "We'll get back to you within 1 hour.",
+    });
+
+    form.reset();
+  } catch (err) {
+    toast({
+      title: "Error",
+      description: "Failed to send quote. Please try again.",
+    });
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section id="contact" className="py-20 hero-gradient">
@@ -31,11 +66,11 @@ const ContactSection = () => {
               Fill out the form and we'll get back to you within 1 hour with a no-obligation quote. Or call us directly!
             </p>
             <div className="space-y-4">
-              <a href="tel:0362001234" className="flex items-center gap-3 text-primary-foreground font-semibold">
-                <Phone className="w-5 h-5" /> (03) 6200 1234
+              <a href="tel:0413 466 112" className="flex items-center gap-3 text-primary-foreground font-semibold">
+                <Phone className="w-5 h-5" /> +61 413 466 112
               </a>
-              <a href="mailto:info@hobartcarpetcleaning.com.au" className="flex items-center gap-3 text-primary-foreground/90">
-                <Mail className="w-5 h-5" /> info@hobartcarpetcleaning.com.au
+              <a href="mailto:bikashchamp9817@gmail.com" className="flex items-center gap-3 text-primary-foreground/90">
+                <Mail className="w-5 h-5" /> bikashchamp9817@gmail/com
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/90">
                 <MapPin className="w-5 h-5" /> Hobart, Tasmania 7000

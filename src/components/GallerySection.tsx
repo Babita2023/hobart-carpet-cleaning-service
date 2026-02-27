@@ -1,11 +1,21 @@
 import ba1 from "@/assets/before-after-1.jpg";
 import ba2 from "@/assets/before-after-2.jpg";
 import ba3 from "@/assets/before-after-3.jpg";
+import ba4 from "@/assets/before-after-4.jpeg";
+import ba5 from "@/assets/before-after-5.jpeg";
+import ba6 from "@/assets/before-after-6.jpeg";
+import ba7 from "@/assets/before-after-7.jpeg";
+import ba8 from "@/assets/before-after-8.png";
 
 const images = [
   { src: ba1, alt: "Carpet cleaning before and after - deep stain removal" },
   { src: ba2, alt: "Pet stain carpet cleaning before and after" },
   { src: ba3, alt: "Upholstery cleaning before and after results" },
+   { src: ba4, alt: "sofa cleaning before and after results" },
+    { src: ba5, alt: "Upholstery cleaning before and after results" },
+     { src: ba6, alt: "Upholstery cleaning before and after results" },
+      { src: ba7, alt: "Upholstery cleaning before and after results" },
+      { src: ba8, alt: "Upholstery cleaning before and after results" },
 ];
 
 const GallerySection = () => (

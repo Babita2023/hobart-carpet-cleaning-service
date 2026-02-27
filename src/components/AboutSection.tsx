@@ -2,7 +2,7 @@ import { Shield, Award, Clock } from "lucide-react";
 
 const highlights = [
   { icon: Shield, label: "Fully Insured" },
-  { icon: Award, label: "15+ Years Experience" },
+  { icon: Award, label: "5+ Years Experience" },
   { icon: Clock, label: "Same Day Service" },
 ];
 
@@ -14,7 +14,11 @@ const AboutSection = () => (
           Hobart's Trusted Carpet Cleaning Experts
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-          At Hobart Premium Carpet Cleaning, we are a locally owned and operated professional carpet cleaning company proudly serving Hobart and surrounding suburbs. Our experienced technicians use state-of-the-art steam cleaning equipment and eco-friendly products to deliver exceptional results every time. Whether it's a deep clean for your home or a commercial property, we guarantee carpets that look, feel, and smell brand new.
+          At Hobart Premium Carpet Cleaning, we are a locally owned and operated professional 
+          carpet cleaning company proudly serving Hobart and surrounding suburbs. Our experienced
+           technicians use state-of-the-art steam cleaning equipment and eco-friendly products to
+            deliver exceptional results every time. Whether it's a deep clean for your home or a
+             commercial property, we guarantee carpets that look, feel, and smell brand new.
         </p>
         <div className="flex flex-wrap justify-center gap-8">
           {highlights.map((h) => (

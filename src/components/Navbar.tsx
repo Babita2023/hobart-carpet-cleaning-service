@@ -28,8 +28,8 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:0362001234" className="flex items-center gap-2 text-sm font-semibold text-primary">
-            <Phone className="w-4 h-4" /> (03) 6200 1234
+          <a href="tel:413 466 112" className="flex items-center gap-2 text-sm font-semibold text-primary">
+            <Phone className="w-4 h-4" /> 413 466 112
           </a>
           <Button variant="cta" size="sm" asChild>
             <a href="#contact">Free Quote</a>
@@ -46,8 +46,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="tel:0362001234" className="flex items-center gap-2 py-2 text-sm font-semibold text-primary">
-            <Phone className="w-4 h-4" /> (03) 6200 1234
+          <a href="tel:+61413466112" className="flex items-center gap-2 py-2 text-sm font-semibold text-primary">
+            <Phone className="w-4 h-4" /> +61 413 466 112
           </a>
           <Button variant="cta" size="sm" className="mt-2 w-full" asChild>
             <a href="#contact">Free Quote</a>

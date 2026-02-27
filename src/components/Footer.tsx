@@ -23,11 +23,11 @@ const Footer = () => (
         <div>
           <h3 className="font-heading font-bold text-lg mb-4">Contact Us</h3>
           <div className="space-y-3 text-sm">
-            <a href="tel:0362001234" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground">
-              <Phone className="w-4 h-4" /> (03) 6200 1234
+            <a href="tel:0413466112" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground">
+              <Phone className="w-4 h-4" /> +61 413 466 112
             </a>
-            <a href="mailto:info@hobartcarpetcleaning.com.au" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground">
-              <Mail className="w-4 h-4" /> info@hobartcarpetcleaning.com.au
+            <a href="mailto:bikashchamp9817@gmail.com" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground">
+              <Mail className="w-4 h-4" /> bikashchamp9817@gmail.com
             </a>
             <div className="flex items-center gap-2 text-primary-foreground/70">
               <MapPin className="w-4 h-4" /> Hobart, Tasmania 7000
