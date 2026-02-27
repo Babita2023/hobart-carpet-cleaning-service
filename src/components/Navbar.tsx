@@ -32,7 +32,7 @@ const Navbar = () => {
             <Phone className="w-4 h-4" /> 413 466 112
           </a>
           <Button variant="cta" size="sm" asChild>
-            <a href="#contact">Free Quote</a>
+            <a href="#contact">Contact Us</a>
           </Button>
         </div>
         <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="Toggle menu">

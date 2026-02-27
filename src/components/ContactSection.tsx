@@ -60,7 +60,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
-              Get Your Free Quote Today
+              Book Your Free Consultation
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8">
               Fill out the form and we'll get back to you within 1 hour with a no-obligation quote. Or call us directly!
@@ -83,7 +83,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             <Input placeholder="Email Address" required name="email" type="email" className="bg-background" />
             <Textarea placeholder="Tell us about your cleaning needs (rooms, stains, etc.)" required name="message" rows={4} className="bg-background" />
             <Button variant="cta" size="lg" className="w-full" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Request Free Quote"}
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>
