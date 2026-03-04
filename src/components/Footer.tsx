@@ -30,7 +30,7 @@ const Footer = () => (
               <Mail className="w-4 h-4" /> bikashchamp9817@gmail.com
             </a>
             <div className="flex items-center gap-2 text-primary-foreground/70">
-              <MapPin className="w-4 h-4" /> Hobart, Tasmania 7000
+              <MapPin className="w-4 h-4" /> Howrah, Hobart, Tasmania 7018 
             </div>
           </div>
         </div>

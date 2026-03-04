@@ -16,17 +16,37 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#" className="font-heading text-lg font-bold text-primary">
-          Hobart Premium<br className="hidden sm:inline" /> Carpet Cleaning
-        </a>
-        <div className="hidden lg:flex items-center gap-6">
-          {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-              {l.label}
-            </a>
-          ))}
-        </div>
+     <div className="container mx-auto flex items-center justify-between h-16 px-4">
+  
+  <a href="#" className="flex items-center gap-3">
+    
+    {/* Logo */}
+    <img 
+      src="/Hobart1.png" 
+      alt="Hobart Premium Cleaning Logo"
+      className="w-10 h-10 object-contain"
+    />
+
+    {/* Business Name */}
+    <span className="font-heading text-lg font-bold text-primary leading-tight">
+      Hobart Premium <br className="hidden sm:inline" /> Cleaning
+    </span>
+
+  </a>
+
+  <div className="hidden lg:flex items-center gap-6">
+    {navLinks.map((l) => (
+      <a
+        key={l.href}
+        href={l.href}
+        className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+      >
+        {l.label}
+      </a>
+    ))}
+  </div>
+
+        
         <div className="hidden lg:flex items-center gap-3">
           <a href="tel:413 466 112" className="flex items-center gap-2 text-sm font-semibold text-primary">
             <Phone className="w-4 h-4" /> 413 466 112
@@ -50,7 +70,7 @@ const Navbar = () => {
             <Phone className="w-4 h-4" /> +61 413 466 112
           </a>
           <Button variant="cta" size="sm" className="mt-2 w-full" asChild>
-            <a href="#contact">Free Quote</a>
+            <a href="#contact">Contact us</a>
           </Button>
         </div>
       )}

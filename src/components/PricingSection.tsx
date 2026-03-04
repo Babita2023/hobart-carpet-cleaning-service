@@ -3,9 +3,16 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import { Check } from "lucide-react";
 
 const packages = [
-  { title: "1 Room", price: "$79", features: ["Steam cleaning", "Stain treatment", "Deodorising", "Up to 12m²"] },
-  { title: "3 Rooms", price: "$199", popular: true, features: ["Steam cleaning", "Stain treatment", "Deodorising", "Up to 36m²", "Hallway included"] },
-  { title: "Whole House", price: "$349", features: ["Steam cleaning", "All rooms", "Stain treatment", "Deodorising", "Hallway & stairs"] },
+  { title: "1 Room", price: "$40", features: ["Steam cleaning", "Stain treatment", "Deodorising", "Up to 12m²"] },
+  { title: "3 Rooms", price: "$125", popular: true, features: ["Steam cleaning", "Stain treatment", "Deodorising", "Up to 36m²", "Hallway included"] },
+  { title: "Whole House", price: "$250- $300", features: ["3 rooms carpet", 
+      "Rug cleaning", 
+      "1 sofa cleaning", 
+      "Stain treatment", 
+      "Deodorising", 
+      "Hallway & stairs", 
+      "Spot treatment for small spills", 
+      "Eco-friendly cleaning solutions"] },
 ];
 
 const PricingSection = () => (

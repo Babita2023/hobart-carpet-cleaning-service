@@ -14,17 +14,17 @@ const HeroSection = () => (
           ⭐ #1 Rated Carpet Cleaners in Hobart
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-primary-foreground leading-tight mb-6">
-          Professional Carpet Cleaning in Hobart, Tasmania
+          Professional Cleaning service in Hobart, Tasmania
         </h1>
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
           Transform your home with Hobart's most trusted carpet cleaning service. Deep steam cleaning that removes stains, allergens, and odours — guaranteed results.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button variant="cta" size="lg" className="text-base px-8 py-6" asChild>
-            <a href="#contact"><MessageSquare className="w-5 h-5 mr-2" /> Get a Free Quote</a>
+            <a href="#contact"><MessageSquare className="w-5 h-5 mr-2" /> Contact Us</a>
           </Button>
           <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
-            <a href="tel:0362001234"><Phone className="w-5 h-5 mr-2" /> Call Now</a>
+            <a href="tel:0413266112"><Phone className="w-5 h-5 mr-2" /> Call Now</a>
           </Button>
         </div>
         <div className="flex items-center gap-6 mt-8 text-primary-foreground/80 text-sm">
